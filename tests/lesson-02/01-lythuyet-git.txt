@@ -1,0 +1,5 @@
+    1. git init: Khởi tạo Git repository trong thư mục hiện tại.
+    2. git add <file_name>: Đưa 1 file cụ thể vào Staging Area.
+    3. git add .: Đưa tất cả các file mơi vào Staging Area.
+    4. git commit -m <message>: Tạo commit kèm thông điệp mô tả.
+    

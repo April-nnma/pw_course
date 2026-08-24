@@ -1,0 +1,5 @@
+_git commit -m "init project": ở bc c ko commit đc vì chưa git add file nào cả.
+_Sau git add file1 thì chỉ có file 1 vào Staging Area thôi.
+_git commit -m "add file" thì lúc này file 1 vào Repository.
+_Lệnh commit cuối (git commit -m "add file") ko tạo commit mới vì Staging Area đang trống.
+_file2 và file 3 vẫn ở Working Directory (Untracked).
