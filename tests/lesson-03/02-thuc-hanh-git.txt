@@ -1,0 +1,62 @@
+a: Tạo 3 file: file1, file2, file3
+_Local: file1, file2, file3
+_Working Directory
+_Staging
+_Repository
+_Commit: Chưa có
+
+b: Chạy lênh (git init)
+_Local
+_Working Directory: file1, file2, file3
+_Staging
+_Repository
+_Commit: Chưa có
+
+c: Chạy lệnh (git commit -m "init project")
+_Local
+_Working Directory: file1, file2, file3
+_Staging
+_Repository
+_Commit: Commit thất bại (vì Staging Area đang trống )
+
+d: Chạy lênh (git add file1)
+_Local
+_Working Directory: file2, file3
+_Staging: file1
+_Repository
+_Commit: Chưa có
+
+e: Chạy lệnh (git commit -m "add file")
+_Local
+_Working Directory: file2, file3
+_Staging
+_Repository: file1
+_Commit: Commit 1: "add file" (chứa file1)
+
+f: Chạy lệnh (git add .)
+_Local
+_Working Directory
+_Staging: file2, file3
+_Repository: file1
+_Commit: Commit 1: "add file" (chứa file1)
+
+g: Chạy lênh (git restore --staged file2)
+_Local
+_Working Directory: file2
+_Staging: file3
+_Repository: file1
+_Commit: Commit 1: "add file" (chứa file1)
+
+h: Chạy lẹnh (git commit -m" add all files")
+_Local
+_Working Directory: file2
+_Staging
+_Repository: file1, file3
+_Commit: Commit 1: "add file" (chứa file1) & Commit 2: "add all files" (chứa file3)
+
+i: Chạy lệnh (git reset HEAD~1)
+_Local
+_Working Directory: file2, file3
+_Staging
+_Repository: file1
+_Commit: Commit 1: "add file" (chứa file1)

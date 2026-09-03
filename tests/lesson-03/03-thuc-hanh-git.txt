@@ -1,0 +1,5 @@
+_Local: file1.txt, oops/file3.txt (vì bị gitignore bỏ qua)
+_Working Directory:
+_Staging
+_Repository: file2.txt, .gitignore
+_Commit: Commit 1: "init project" (chứa file2.txt & .gitignore)
