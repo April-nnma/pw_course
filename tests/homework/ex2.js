@@ -1,3 +1,3 @@
 let myName = "Alex";
-myName = "Nagi"
+myName = "Nagi";
 console.log(myName);

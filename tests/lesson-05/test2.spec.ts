@@ -4,7 +4,7 @@ test("Product", async ({ page }) => {
   await test.step("Navigate to material playwright page", async () => {
     await page.goto("https://material.playwrightvn.com/");
   });
-  
+
   //Click bai 2
   await test.step("Click: Bài học 2: Product page", async () => {
     await page.locator('//a[text()="Bài học 2: Product page"]').click();
