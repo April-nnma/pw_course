@@ -5,29 +5,28 @@ test("Product", async ({ page }) => {
     await page.goto("https://material.playwrightvn.com/");
   });
 
-  //Click bai 2
+  //lesson 2
   await test.step("Click: Bài học 2: Product page", async () => {
-    await page.locator('//a[text()="Bài học 2: Product page"]').click();
+    await page.getByRole("link", { name: "Bài học 2: Product page" }).click();
   });
 
   //Add product 1: 2prod
   await test.step("Product 1", async () => {
-    // const button = page.locator('//button[@data-product-id="1"]');
-    // await button.scrollIntoViewIfNeeded();
-    // await page.pause();
-    // await button.dblclick();
-    await page.locator('//button[@data-product-id="1"]').dblclick();
+    //await page.getByRole("button", { name: "Add to Cart" }).nth(0).dblclick();
+    await page.getByRole("button", { name: "Add to Cart" }).first().dblclick();
   });
 
   //Add product 2: 3prod
   await test.step("Product 2", async () => {
     await page
-      .locator('//button[@data-product-id="2"]')
+      .getByRole("button", { name: "Add to Cart" })
+      .nth(1)
       .click({ clickCount: 3 });
   });
 
   //Add product 3: 1prod
   await test.step("Product 3", async () => {
-    await page.locator('//button[@data-product-id="3"]').click();
+    //await page.getByRole("button", { name: "Add to Cart" }).nth(2).click();
+    await page.getByRole("button", { name: "Add to Cart" }).last().click();
   });
 });
